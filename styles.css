@@ -49,6 +49,7 @@ body {
 .attribution{
     position: absolute;
     bottom: 0;
+    margin-bottom: 20px;
 }
 
 .attribution-mobile{
@@ -137,10 +138,10 @@ body {
 
 @media (max-width: 400px) {
 
-    .container{
+    /* .container{
         width: 100vw;
         height: 100vh;
-    }
+    } */
 
     .card-container{
             width: 327px;
@@ -150,9 +151,18 @@ body {
     .card-image{
             width: 279px;
             height: 200px;
+            overflow: hidden;
+            object-fit: none;
             border-radius: 10px;
             margin-left: auto;
             margin-right: auto;
+
+/* .fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;} */
+
 
     }
     .card-status-main{
@@ -177,6 +187,7 @@ body {
     .attribution-mobile{
             display:block;
             padding-top: 40px;
+            /* overflow: hidden; */
             font-size: 12px;
     }
 
